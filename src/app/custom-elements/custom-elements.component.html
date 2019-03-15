@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-sm-2">
+    <button class="btn-primary" [ngStyle]="customProperties" (click)="showEdit = !showEdit">Custom</button>
+    <color-sketch *ngIf="showEdit" (onChangeComplete)="handleChangeComplete($event)"></color-sketch>
+  </div>
+  <div class="col-sm-8">
+  </div>
+</div>
